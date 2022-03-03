@@ -36,7 +36,9 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+<div align="center" style="border: 1px solid black; border-radius: 5px;">
+  <img src="./Devchallenges1440.png">
+</div>
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
