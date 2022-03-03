@@ -16,80 +16,332 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <title>Devchallenges</title>
 
     <style>
+      /* font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
+    */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
       body {
         font-family: "Poppins", sans-serif;
       }
+      .container {}
+      .header h1 {}
+      .header-section p {}
 
-      ul {
-        padding-left: 24px;
+      .gallery {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(8, 1fr); */
       }
 
-      li {
-        margin-bottom: 8px;
+      @media (min-width: 375px)
+      {
+        .container {
+          width: 88%;
+          margin: 0 auto;
+        }
+        .gallery {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 50px;
+        }
+        .card-two {
+          margin-top: 66px;
+        }
+        .card-four {
+          margin-top: 50px;
+        }
+        .card-six {
+          margin-top: 50px;
+        }
+        .caption {
+
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 21px;
+
+          color: #000000;
+        }
+        .header h1 {
+          height: 27px;
+          width: 278px;
+          font-family: 'PT Serif', serif;
+          color: #000;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 48px;
+          letter-spacing: -0.045em;
+          margin-bottom: 38px;
+          margin-top: 71px;
+        }
+        .header-section h2 {
+          height: 27px;
+          font-family: 'Poppins';
+          font-weight: 600;
+          font-style: normal;
+          font-size: 18px;
+          line-height: 27px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        .header-section p {
+          width: 333px;
+          height: 87px;
+
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 21px;
+
+          color: #000000;
+          margin-bottom: 38px;
+        }
+        .footer {
+          margin-top: 134px;
+        }
+
+        .card {
+          position: relative;
+        }
+        .card p {
+          position: absolute;
+          height: 13px;
+          right: 10px;
+          top: 25px;
+          right: -40px;
+
+          font-family: PT Serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 13px;
+          text-transform: uppercase;
+
+          color: #000000;
+
+          transform: rotate(90deg);
+        }
+        .card-one p {
+          top: 35px;
+          right: -50px;
+        }
+
+        .footer {
+          height: 17px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+
+          text-align: center;
+
+          color: #A9A9A9;
+
+        }
+        .footer * {
+          color: #a9a9a9;
+        }
       }
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
+     
+
+      @media (min-width: 1440px)
+      {
+        .container {
+          width: 75%;
+          margin: 0 auto;
+          margin-top: 110px;
+        }
+        .gallery {
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+        .header {
+          display: flex;
+          margin-bottom: 96px;
+        }
+        .header h1 {
+          font-family: 'PT Serif', serif;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 48px;
+          letter-spacing: -0.045em;
+          color: #000;
+          font-style: normal;
+          width: 278px;
+          height: 47px;
+          margin-top: 0;
+       }
+       .header-section {
+         margin-left: auto;
+       }
+        .header-section h2 {
+          font-family: 'Poppins', serif;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          color: #000;
+          text-transform: uppercase;
+          width: 117px;
+          height: 27px;
+          margin-bottom: 10px;
+        }
+
+        .header-section p {
+          font-family: 'Poppins', serif;
+          width: 439px;
+          height: 87px;
+          font-weight: normal;
+          line-height: 27px;
+          font-size: 18px;
+          color: #000;
+        }
+        .card {
+          position: relative;
+          width: 276px;
+          height: 469px;
+        }
+        .card-one {
+          grid-area: 'one';
+        }
+        .card-two {
+          grid-area: 'two';
+          margin-top: 162px;
+        }
+        .card-three {
+          grid-area: 'three';
+        }
+        .card-four {
+          grid-area: 'four';
+        }
+        .card-five {
+          grid-area: 'five';
+          margin-top: 126px;
+        }
+        .card-six {
+          grid-area: 'six';
+        }
+
+        .card p {
+          color: #000;
+          width: 102px;
+          height: 16px;
+          font-family: 'PT Serif', serif;
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          line-height: 16px;
+          text-transform: uppercase;
+          position: absolute;
+          transform: rotate(90deg);
+          top: 40px;
+          right: -70px;
+        }
+
+        .caption {
+          font-family: 'Poppins';
+          font-weight: 600;
+          line-height: 27px;
+          font-size: 18px;
+          height: 27px;
+          color: #000;
+        }
+        .footer {
+          margin-bottom: 24px;
+        }
+        .footer p, .footer a {
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: #a9a9a9;
+        }
       }
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+    <div class="container">
+      <header class="header">
+        <h1>The creative crew</h1>
+        <section class="header-section">
+          <h2>who we are</h2>
+          <p>
+            We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.
+          </p>
+        </section>
+      </header>
+      <main class="gallery">
+        <div class="card card-one">
+          <figure>
+            <img src="./photo1.png" alt="">
+            <figcaption class="caption">Bill Mahoney</figcaption>
+          </figure>
+          <p>Product owner</p>
+        </div>
+        <div class="card card-two">
+          <figure>
+            <img src="./photo2.png" alt="">
+            <figcaption class="caption">Saba Cabrera</figcaption>
+          </figure>
+          <p>Art director</p>
+        </div>
+        <div class="card card-three">
+          <figure>
+            <img src="./photo3.png" alt="">
+            <figcaption class="caption">Shae Le</figcaption>
+          </figure>
+          <p>Tech Lead</p>
+        </div>
+        <div class="card card-four">
+          <figure>
+            <img src="./photo4.png" alt="">
+            <figcaption class="caption">Skylah Lu</figcaption>
+          </figure>
+          <p>UX Designer</p>
+        </div>
+        <div class="card card-five">
+          <figure>
+            <img src="./photo5.png" alt="">
+            <figcaption class="caption">Griff Richards</figcaption>
+          </figure>
+          <p>Developer</p>
+        </div>
+        <div class="card card-six">
+          <figure>
+            <img src="./photo6.png" alt="">
+            <figcaption class="caption">Stan John</figcaption>
+          </figure>
+          <p>DEverloper</p>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>created by <a href="https://devchallenges.io/dashboard">@DoIfeanyichukwu</a> - <a href="https://devechallenges.io">devChallenges.io</a></p>
+      </footer>
     </div>
   </body>
 </html>
