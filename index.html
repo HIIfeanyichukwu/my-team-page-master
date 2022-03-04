@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
     />
 
     <link rel="icon" href="devchallenges.png" />
@@ -40,19 +39,50 @@
 
       body {
         font-family: "Poppins", sans-serif;
+        text-align: center;
       }
-      .container {}
-      .header h1 {}
-      .header-section p {}
-
+      .header h1 {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+      .header-section {
+        margin-bottom: 2rem;
+      }
+      .header-section h2 {
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+      }
       .gallery {
-        display: grid;
-        /* grid-template-columns: 1fr 1fr 1fr; */
-        /* grid-template-rows: repeat(8, 1fr); */
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .caption {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .card {
+        margin-bottom: 2rem;
+      }
+
+      .footer {
+        margin-bottom: 1rem;
+      }
+
+      .footer a, .footer p {
+        color: #A9A9A9;
       }
 
       @media (min-width: 375px)
       {
+        body {
+          text-align: left;
+        }
         .container {
           width: 88%;
           margin: 0 auto;
@@ -60,7 +90,8 @@
         .gallery {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 50px;
+          gap: 28px;
+          width: auto;
         }
         .card-two {
           margin-top: 66px;
@@ -169,8 +200,13 @@
 
       @media (min-width: 1440px)
       {
+        body {
+          max-width: 1440px;
+          margin: 0 auto;
+        }
         .container {
-          width: 75%;
+          width: 70%;
+          /* max-width: 1440px; */
           margin: 0 auto;
           margin-top: 110px;
         }
@@ -220,26 +256,17 @@
           position: relative;
           width: 276px;
           height: 469px;
+          margin-bottom: 0;
+          margin-top: 0;
         }
-        .card-one {
-          grid-area: 'one';
-        }
+
         .card-two {
-          grid-area: 'two';
           margin-top: 162px;
         }
-        .card-three {
-          grid-area: 'three';
-        }
-        .card-four {
-          grid-area: 'four';
-        }
+
         .card-five {
-          grid-area: 'five';
-          margin-top: 126px;
-        }
-        .card-six {
-          grid-area: 'six';
+          margin-top: 162px;
+          margin-bottom: 0px;
         }
 
         .card p {
