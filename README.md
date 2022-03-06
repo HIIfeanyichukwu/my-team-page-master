@@ -43,7 +43,7 @@
 
 <br>
 
-The demo page for this challenge can be found at [myteampagedemo.surge.sh]("https://myteampage.surge.sh")
+The demo page for this challenge can be found at [my-team-page-master]("https://my-team-page-master.surge.sh")
 
 The challenge helped me to practically apply the knowledge responsive web design to actual design files.
 
