@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://myteampagedemo.surge.sh">
+    <a href="https://my-team-page-master.surge.sh">
       Demo
     </a>
     <span> | </span>
@@ -43,7 +43,9 @@
 
 <br>
 
-The demo page for this challenge can be found at [my-team-page-master]("https://my-team-page-master.surge.sh")
+The demo page for this challenge can be found at <a href="https://my-team-page-master.surge.sh">
+      my-team-page-master
+    </a>
 
 The challenge helped me to practically apply the knowledge responsive web design to actual design files.
 
